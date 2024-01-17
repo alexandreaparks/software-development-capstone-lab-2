@@ -1,0 +1,17 @@
+class Student:
+    def __init__(self, name, school_id, gpa):  # self is like this in Java
+        self.name = name  # instance variable in our student object
+        self.school_id = school_id
+        self.gpa = gpa
+
+    def __str__(self):  # for returning string representation of object
+        return f"Student name: {self.name}, ID: {self.school_id}, GPA: {self.gpa}"
+
+
+alexandrea = Student("Alexandrea", "yy2888bl", 4.0)  # create new student object
+print(alexandrea.name)
+print(alexandrea.school_id)
+print(alexandrea)
+
+sam = Student("Sam", "qwerty", 3.7)
+print(sam)
