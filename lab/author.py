@@ -1,3 +1,12 @@
+"""
+Alexandrea Parks
+author.py
+1/17/2024
+This program creates an Author class with instance variables for the name of an author and their published books
+stored in a list. The class is used to create some Author objects.
+"""
+
+
 class Author:
 
     def __init__(self, name):

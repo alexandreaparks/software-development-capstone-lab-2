@@ -1,3 +1,12 @@
+"""
+Alexandrea Parks
+students.py
+1/17/2024
+This program creates a Student class with instance variables for the name of a student, their school ID,
+and their GPA. The class is used to create some Student objects.
+"""
+
+
 from dataclasses import dataclass
 
 # use dataclass to remove boring code from programs
