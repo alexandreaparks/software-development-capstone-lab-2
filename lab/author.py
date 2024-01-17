@@ -40,11 +40,21 @@ def main():
     shakespeare.publish("Hamlet")
     shakespeare.publish("Richard III")
     shakespeare.publish("Hamlet")  # try adding a duplicate book title - doesn't work
-
     print(shakespeare)  # uses __str__ method to print info about author object
 
     alexandrea = Author("Alexandrea")  # add another author
     print(alexandrea)  # alexandrea hasn't published any books so "No books" is printed
+
+    partanen = Author("Anu Partanen")
+    partanen.publish("The Nordic Theory of Everything")
+    print(partanen)
+
+    patterson = Author("James Patterson")
+    patterson.publish("Along Came a Spider")
+    patterson.publish("Roses Are Red")
+    patterson.publish("The Girl in the Castle")
+    print(patterson)
+
 
 
 if __name__ == "__main__":
