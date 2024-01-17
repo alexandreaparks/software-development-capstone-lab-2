@@ -11,7 +11,7 @@ class Author:
 
     def __init__(self, name):
         self.name = name
-        self.books = []  # create empty book title list
+        self.books = []
 
     # __str__ method is used to format/print data about an author object
     def __str__(self):
@@ -29,9 +29,11 @@ class Author:
     # publish method is used to add a book to books list
     def publish(self, book_title):
         if book_title in self.books:  # if book was already added to books list
-            print("This book is already in the list")  # print this error message
+            print("This book is already in the list")
         else:  # else add the book to the books list
             self.books.append(book_title)
+
+        # can also use set - compare sizes of set
 
 
 # main function used to create new author objects
@@ -58,4 +60,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()  # call main function to start program
+    main()
